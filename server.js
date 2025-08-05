@@ -9,6 +9,7 @@ const app = require("./app");
 // Connecting to the local mongo db, it require connection string, which is must be stored in config.env file
 mongoose
   .connect(process.env.DATABASE, {
+    //   .connect("mongodb://root:example@db:27017/", {
     // useNewUrlParser: true,
     // useCreateIndex: true,
     // useFindAndModify: false,

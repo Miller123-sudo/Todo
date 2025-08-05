@@ -11,6 +11,8 @@ const app = express();
 
 app.use(cors({ origin: "*" }));
 
+app.use(express.json());
+
 app.use("/api/v1/todo", todoRouter);
 
 // /* DEFAULT ROUTE IF ANY ROUTES DO NOT MATCH ABOVE ROUTES

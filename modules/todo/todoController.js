@@ -25,6 +25,7 @@ exports.getTodos = catchAsync(async (req, res, next) => {
  */
 exports.createTodo = async (req, res, next) => {
   let obj = new Object();
+  console.log("req.body: ", req.body);
 
   // 1. Create user
   const doc = await Todo.create(req.body);
